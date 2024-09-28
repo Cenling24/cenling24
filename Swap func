@@ -1,0 +1,25 @@
+void Swap(int*px,int*py){
+    int temp=*px;
+    *px=*py;
+    *py=temp;
+}
+
+
+void Bubble(int *parr,int len){
+    for(int i=0;i<len-1;i++){
+        for(int j = 0 ; j<len -1 -i;j++){
+            if(parr[j]>parr[j+1]){
+                Swap(&parr[j],&parr[j+1]);
+            }
+        }
+    }
+
+}
+
+void printarr(int *parr,int len){
+    for(int i = 0;i<len;i++){
+        printf("%d\t",parr[i]);
+    }
+}
+
+int binary_Search()
